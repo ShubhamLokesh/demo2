@@ -9,7 +9,8 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/ShubhamLokesh/demo2.git'  // Change this to your GitHub repo
+                git branch: 'main', url: 'https://github.com/ShubhamLokesh/demo2.git'
+                // git 'https://github.com/ShubhamLokesh/demo2.git'  // Change this to your GitHub repo
             }
         }
 
