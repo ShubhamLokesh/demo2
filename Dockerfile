@@ -4,7 +4,7 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy the Python script into the container
-COPY hello.py /app/
+COPY demo.py /app/
 
 # Run the Python script
-CMD ["python", "hello.py"]
+CMD ["python", "demo.py"]
